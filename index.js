@@ -27,7 +27,11 @@ function appendKitten(name) {
 function prependKitten(name) {
   return [name, ...kittens]
 }
-//removes the last kitten in og array, returns a new array & leaves og alone
+//removes last kitten in og array, returns a new array & leaves og alone
 function removeLastKitten() {
   return kittens.slice(0, kittens.length - 1)
+}
+//removes first kitten in og array, returns a new array & leaves og alone
+function removeFirstKitten() {
+  return kittens.slice(1)
 }
